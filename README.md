@@ -4,13 +4,13 @@ This component can be used for biometric login
 Import the Component
 
 ```ts
-import SENTARABiometric from './src/components/SENTARABiometric';
+import sentarabiometric from 'sentarabiometric';
 ```
 
 Use it inside the component render section
 
 ```ts
-<SENTARABiometric
+<sentarabiometric
 isFeatureOn={boolean}
 imageFPDisabled={imgsource}
 imageFPEnabled={imgsource}
