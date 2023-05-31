@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import {TouchableOpacity} from 'react-native';
-import SentaraBiometric from 'sentara-biometrics';
+import SentaraBiometric from '../index';
 const mockedCallBack = jest.fn();
 const mockSetState = jest.fn();
 jest.mock('react-native-biometrics', () => {
@@ -27,8 +27,8 @@ describe('Rendering SENTARABiometric', () => {
     renderer.create(
       <SentaraBiometric
         isFeatureOn={true}
-        imageFPDisabled={require('../../../src/images/fingerprint-disabled.png')}
-        imageFPEnabled={require('../../../src/images/fingerprint.png')}
+        imageFPDisabled={require('./images/fingerprint-disabled.png')}
+        imageFPEnabled={require('./images/fingerprint.png')}
         signInPromptMsg="Sign in with your biometric (Touch the biometric sensor)"
         containerStyle={{
           justifyContent: 'center',
@@ -47,8 +47,8 @@ describe('Rendering SENTARABiometric', () => {
       .create(
         <SentaraBiometric
           isFeatureOn={true}
-          imageFPDisabled={require('../../../src/images/fingerprint-disabled.png')}
-          imageFPEnabled={require('../../../src/images/fingerprint.png')}
+          imageFPDisabled={require('./images/fingerprint-disabled.png')}
+          imageFPEnabled={require('./images/fingerprint.png')}
           signInPromptMsg="Sign in with your biometric (Touch the biometric sensor)"
           containerStyle={{
             justifyContent: 'center',
@@ -69,8 +69,8 @@ describe('Rendering SENTARABiometric', () => {
     const failureComponent = renderer.create(
       <SentaraBiometric
         isFeatureOn={false}
-        imageFPDisabled={require('../../../src/images/fingerprint-disabled.png')}
-        imageFPEnabled={require('../../../src/images/fingerprint.png')}
+        imageFPDisabled={require('./images/fingerprint-disabled.png')}
+        imageFPEnabled={require('./images/fingerprint.png')}
         signInPromptMsg="Sign in with your biometric (Touch the biometric sensor)"
         containerStyle={{
           justifyContent: 'center',
@@ -92,8 +92,8 @@ describe('Rendering SENTARABiometric', () => {
     const rootComponent = renderer.create(
       <SentaraBiometric
         isFeatureOn={true}
-        imageFPDisabled={require('../../../src/images/fingerprint-disabled.png')}
-        imageFPEnabled={require('../../../src/images/fingerprint.png')}
+        imageFPDisabled={require('./images/fingerprint-disabled.png')}
+        imageFPEnabled={require('./images/fingerprint.png')}
         signInPromptMsg="Sign in with your biometric (Touch the biometric sensor)"
         containerStyle={{
           justifyContent: 'center',
