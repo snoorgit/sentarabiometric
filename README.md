@@ -1,16 +1,22 @@
+## Installation
+Run ``` npm install --save snoorgit/sentarabiometric in your project directory. ```
 
-### How to Use
-This component can be used for biometric login
-Import the Component
+## Installing dependencies into your managed project
+Run ``` npm install --save react-native-biometrics@2.1.4 ```
+
+Kindly check the installation and setup for the dependency [here](https://github.com/SelfLender/react-native-biometrics)
+
+## How to Use
+This component is specific to Sentara for biometric login. You can import the component as 
 
 ```ts
-import sentarabiometric from 'sentarabiometric';
+import SentaraBiometric from 'sentara-biometrics';
 ```
 
 Use it inside the component render section
 
 ```ts
-<sentarabiometric
+<SentaraBiometric
 isFeatureOn={boolean}
 imageFPDisabled={imgsource}
 imageFPEnabled={imgsource}
