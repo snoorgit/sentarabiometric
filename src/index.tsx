@@ -3,7 +3,7 @@ import {SENTARABIOMETRIC_PROPS} from './interfaces';
 import {View, Image, TouchableOpacity} from 'react-native';
 import ReactNativeBiometrics from 'react-native-biometrics';
 
-const sentarabiometric: React.FC<SENTARABIOMETRIC_PROPS> = ({
+const SentaraBiometric: React.FC<SENTARABIOMETRIC_PROPS> = ({
   isFeatureOn,
   imageFPDisabled,
   imageFPEnabled,
@@ -78,4 +78,4 @@ const sentarabiometric: React.FC<SENTARABIOMETRIC_PROPS> = ({
   );
 };
 
-export default sentarabiometric;
+export default SentaraBiometric;
