@@ -9,7 +9,7 @@
   },
   "peerDependencies": {
     "react": "18.2.0",
-    "react-native": "0.71.8",
+    "react-native": "0.71.7",
     "react-native-biometrics": "^2.1.4",
     "react-native-keychain": "^8.1.1"
   },
