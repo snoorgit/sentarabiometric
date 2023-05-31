@@ -1,6 +1,6 @@
 
 {
-  "name": "sentarabiometrics",
+  "name": "sentara-biometrics",
   "version": "1.0.0",
   "description": "A react native package for Sentara to implement biometrics",
   "main": "src/index.js",
